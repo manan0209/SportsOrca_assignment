@@ -2,6 +2,9 @@
 
 A web application that displays upcoming soccer matches using the football-data.org API.
 
+## Snapshots
+<img src="ss.png" alt="Project Screenshot" width="500" />
+
 ## Features
 
 - 📅 Display upcoming Premier League matches
