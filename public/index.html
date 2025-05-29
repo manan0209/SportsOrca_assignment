@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Soccer Matches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚽ Upcoming Soccer Matches</h1>
+            <p class="subtitle">Premier League Fixtures</p>
+        </header>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading matches...</p>
+        </div>
+
+        <div class="error" id="error" style="display: none;">
+            <p>Failed to load matches. Please try again later.</p>
+            <button onclick="loadMatches()" class="retry-btn">Retry</button>
+        </div>
+
+        <div class="matches-container" id="matchesContainer">
+            <!-- Matches will be loaded here -->
+        </div>
+
+        <div class="refresh-section">
+            <button onclick="loadMatches()" class="refresh-btn">🔄 Refresh Matches</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Data provided by <a href="https://www.football-data.org/" target="_blank">football-data.org</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
